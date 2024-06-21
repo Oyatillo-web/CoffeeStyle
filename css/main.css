@@ -5,6 +5,12 @@
   font-weight: 400;
   src: url("../fonts/karla-v31-latin-regular.woff2") format("woff2");
 }
+.container {
+  width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,17 +18,6 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
-}
-
-.container {
-  width: 980px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-:root {
-  --text-clr:rgb(29, 31, 46);
-  --white-clr:rgb(255, 255, 255);
 }
 
 .site-header {
@@ -46,7 +41,7 @@
 }
 
 .navbar__link {
-  color: var(--text-clr);
+  color: rgb(29, 31, 46);
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -58,7 +53,7 @@
   position: relative;
   width: 92px;
   padding: 4px 0;
-  color: var(--text-clr);
+  color: rgb(29, 31, 46);
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -91,13 +86,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--white-clr);
+  color: rgb(255, 255, 255);
   font-size: 11px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0%;
   border-radius: 9px;
-  background: var(--text-clr);
+  background: rgb(29, 31, 46);
   border: none;
 }
 
@@ -105,8 +100,8 @@
   padding: 159px 0;
   background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
-  background-size: 100%;
+  background-size: 1380px 530px;
+  background-position: bottom;
 }
 
 .hero {
@@ -117,7 +112,7 @@
 
 .hero__top-text {
   margin-bottom: 10px;
-  color: var(--white-clr);
+  color: rgb(255, 255, 255);
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -127,7 +122,7 @@
 
 .hero__title {
   margin-bottom: 10px;
-  color: var(--white-clr);
+  color: rgb(255, 255, 255);
   font-size: 47px;
   font-weight: 400;
   line-height: 60px;
@@ -136,7 +131,7 @@
 
 .hero__bottom-text {
   margin-bottom: 48px;
-  color: var(--white-clr);
+  color: rgb(255, 255, 255);
   font-size: 17px;
   font-weight: 400;
   line-height: 30px;
@@ -148,7 +143,7 @@
   box-shadow: 0px 2px 6px 0px rgba(29, 31, 46, 0.1);
   background-color: rgb(255, 255, 255);
   text-align: center;
-  color: var(--text-clr);
+  color: rgb(29, 31, 46);
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -173,7 +168,7 @@
 
 .pointing__title {
   margin-bottom: 16px;
-  color: var(--text-clr);
+  color: rgb(29, 31, 46);
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;
@@ -182,7 +177,7 @@
 
 .pointing__text {
   margin-bottom: 21px;
-  color: var(--text-clr);
+  color: rgb(29, 31, 46);
   opacity: 0.7;
   font-size: 16px;
   font-weight: 400;
@@ -214,10 +209,11 @@
   padding-bottom: 104px;
 }
 
-.mugs__title, .product__title {
+.mugs__title, .product__title, .magazine__title {
   display: inline-block;
   margin-bottom: 100px;
-  color: var(--text-clr);
+  padding: 0 50px;
+  color: rgb(29, 31, 46);
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -225,7 +221,7 @@
   text-transform: uppercase;
   position: relative;
 }
-.mugs__title::before, .product__title::before {
+.mugs__title::before, .product__title::before, .magazine__title::before {
   content: "";
   width: 30px;
   height: 1px;
@@ -233,10 +229,10 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -50px;
+  left: 0;
   background-color: rgb(236, 236, 237);
 }
-.mugs__title::after, .product__title::after {
+.mugs__title::after, .product__title::after, .magazine__title::after {
   content: "";
   width: 30px;
   height: 1px;
@@ -244,7 +240,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  right: -50px;
+  right: 0;
   background-color: rgb(236, 236, 237);
 }
 
@@ -266,7 +262,7 @@
 
 .mugs__subtitle {
   margin-bottom: 5px;
-  color: var(--text-clr);
+  color: rgb(29, 31, 46);
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -302,6 +298,7 @@
 
 .product {
   padding-bottom: 100px;
+  text-align: center;
 }
 
 .product__list {
@@ -328,7 +325,7 @@
 
 .product__subtitle {
   margin-bottom: 5px;
-  color: var(--text-clr);
+  color: v rgb(29, 31, 46);
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -350,4 +347,71 @@
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0%;
+}
+
+.magazine {
+  text-align: center;
+}
+
+.magazine__wrapper {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.magazine__content-wrapper {
+  width: 330px;
+  text-align: left;
+}
+
+.magazine__offer {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: rgb(29, 31, 46);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.magazine__content-title {
+  margin-bottom: 15px;
+  color: rgb(29, 31, 46);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.magazine__text {
+  margin-bottom: 25px;
+  color: rgba(29, 31, 46, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+
+.magazine__btn {
+  width: 173px;
+  padding: 9px 0;
+  text-align: center;
+  background-color: rgb(29, 31, 46);
+  border: 1px solid rgb(29, 31, 46);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.magazine__btn:hover {
+  border-color: rgba(29, 31, 46, 0.7);
+  background-color: transparent;
+  color: rgb(29, 31, 46);
 }/*# sourceMappingURL=main.css.map */

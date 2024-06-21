@@ -1,0 +1,134 @@
+// pointing style start
+.pointing-section {
+    padding: 123px  0 130px 0;
+}
+
+.pointing {
+   text-align: center;
+}
+.pointing__content-wrapper{
+    width: 626px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.pointing__title {
+    margin-bottom: 16px;
+    color: $text-clr;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0%;
+}
+.pointing__text {
+    margin-bottom: 21px;
+    color: $text-clr;
+    opacity: 0.7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+.pointing__link {
+    width: 133px;
+    padding-bottom: 6px;
+    color: rgb(162, 95, 75);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    position: relative;
+    cursor: pointer;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(162, 95, 75, 0.2);
+    }
+}
+.pointing__mugs {
+    padding-bottom: 104px;
+}
+
+.mugs__title, .product__title, .magazine__title {
+    display: inline-block;
+    margin-bottom: 100px;
+    padding: 0 50px;
+    color: $text-clr;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    
+    &::before{
+        content: "";
+        width: 30px;
+        height: 1px;
+        margin: auto 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(236, 236, 237);
+    }
+    &::after{
+        content: "";
+        width: 30px;
+        height: 1px;
+        margin: auto 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(236, 236, 237);
+    }
+}
+.mugs__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mugs__item {
+    width: 480px;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.mugs__img {
+    margin-bottom: 35px;
+}
+.mugs__subtitle {
+    margin-bottom: 5px;
+    color: $text-clr;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+.mugs__cost {
+    color: rgba(29, 31, 46, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+.mugs__sale-cost, .product__sale-cost {
+    display: inline-block;
+    margin-right: 10px;
+    color: rgb(162, 95, 75);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+.mugs__cost-del, .product__cost-del{
+    color: rgba(29, 31, 46, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-decoration-line: line-through;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeStyle</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="scss/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
 </head>
@@ -64,7 +64,7 @@
                         <a class="pointing__link" href="#">Read the full Story</a>
                     </div>
                     <div data-aos="zoom-in-up" data-aos-duration="700" class="pointing__mugs mugs">
-                        <h3 class="mugs__title">Featured Mugs</h3>
+                        <strong class="mugs__title">Featured Mugs</strong>
                         <ul class="mugs__list">
                             <li class="mugs__item">
                                 <img class="mugs__img" src="./images/mugs1-img.jpg" alt="product img" width="460" height="540">
@@ -79,8 +79,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div data-aos="zoom-in-up" data-aos-duration="700" class="pointing__product product">
-                        <h3 class="product__title">More Products</h3>
+                 </div>
+            </div>
+        </section>
+        <section class="product-section">
+            <div class="container">
+                <div data-aos="zoom-in-up" data-aos-duration="700" class="product">
+                        <strong class="product__title">More Products</strong>
                         <ul class="product__list">
                             <li class="product__item">
                                 <img class="product__img" src="./images/product1-img.jpg" alt="Product img" width="300" height="380">
@@ -131,9 +136,24 @@
                             </li>
                         </ul>
                     </div>
-                </div>
             </div>
         </section>
+        <section class="magazine-section">
+            <div class="container">
+                <div class="magazine">
+                        <strong class="magazine__title">Buy 2 mugs and get a coffee magazine free</strong>
+                        <div class="magazine__wrapper">
+                            <img class="magazine__img" src="./images/magazine-img.png" alt="Magazine img" width="460" height="280">
+                            <div class="magazine__content-wrapper">
+                                <strong class="magazine__offer">Premium Offer</strong>
+                                <h3 class="magazine__content-title">Get our Coffee Magazine</h3>
+                                <p class="magazine__text">The most versatile furniture system ever created. Designed to fit your life.</p>
+                                <button class="magazine__btn">Start Shopping</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>            
     </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
