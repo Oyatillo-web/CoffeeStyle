@@ -1,5 +1,8 @@
 // magazine style start
 
+.magazine-section{
+    padding-bottom: 130px;
+}
 .magazine{
     text-align: center;
 }
@@ -10,7 +13,16 @@
     gap: 80px;
     align-items: center;
 }
-
+.magazine__img-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.magazine__two-images{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .magazine__content-wrapper {
     width: 330px;
     text-align: left;
