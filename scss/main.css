@@ -439,7 +439,7 @@
 }
 
 .story-section {
-  padding: 100px 0 152px 0;
+  padding: 100px 0 200px 0;
 }
 
 .story {
@@ -525,4 +525,104 @@
   line-height: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.signup-section {
+  padding: 80px 0 84px 0;
+  background-color: rgb(29, 31, 46);
+}
+
+.signup {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signup__text {
+  margin-bottom: 15px;
+  padding: 0 50px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+.signup__text::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(210, 210, 213, 0.1);
+}
+.signup__text::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(210, 210, 213, 0.1);
+}
+
+.signup__title {
+  margin-bottom: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0%;
+}
+
+.signup__btn-wrapper {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signup__email {
+  width: 350px;
+  padding: 18px 0;
+  text-align: center;
+  border: 1px solid rgb(47, 48, 62);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.signup__btn {
+  width: 129px;
+  padding: 18px 0;
+  box-shadow: 0px 2px 6px 0px rgba(29, 31, 46, 0.1);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s all linear;
+}
+.signup__btn:hover {
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(29, 31, 46);
+  color: rgb(255, 255, 255);
+}
+.signup__btn:active {
+  cursor: grabbing;
+  opacity: 0.7;
 }/*# sourceMappingURL=main.css.map */
