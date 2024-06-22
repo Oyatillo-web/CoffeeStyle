@@ -24,6 +24,14 @@
     line-height: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    transition: 0.3s color ease-in-out;
+    &:hover{
+        color: rgb(162, 95, 75);
+    }
+    &:active{
+        cursor: grabbing;
+        opacity: 0.7;
+    }
 }
 .header__cart-btn {
     position: relative;
@@ -43,7 +51,10 @@
     background-repeat: no-repeat;
     background-size: 16px 20px;
     background-position: left 0px;
-
+    transition: color 0.3s linear;
+    &:hover{
+        color:rgb(162, 95, 75) ;
+    }
 
     &::before{
         content: "";
@@ -52,8 +63,11 @@
         background-color: rgba(162, 95, 75, 0.3);
         position: absolute;
         bottom: 0;
+        transition: 0.3s all linear;
     }
-    
+    &:hover::before{
+        background-color: rgba(162, 95, 75, 1);
+    }
 }
 .cart__count{
     position: absolute;

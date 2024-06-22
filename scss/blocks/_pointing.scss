@@ -8,6 +8,7 @@
 }
 .pointing__content-wrapper{
     width: 626px;
+    padding-bottom: 100px;
     text-align: center;
     margin: 0 auto;
 }
@@ -29,7 +30,6 @@
     letter-spacing: 0%;
 }
 .pointing__link {
-    width: 133px;
     padding-bottom: 6px;
     color: rgb(162, 95, 75);
     font-size: 15px;
@@ -37,14 +37,21 @@
     line-height: 28px;
     letter-spacing: 0%;
     position: relative;
+    overflow: hidden;
     cursor: pointer;
     &::before{
         content: "";
         width: 100%;
         height: 2px;
         position: absolute;
-        bottom: 0;
+        bottom:0 ;
+        left: 0;
+        transition: 0.3s all linear;
         background-color: rgba(162, 95, 75, 0.2);
+    }
+    &:hover::before{
+        background-color: rgba(162, 95, 75, 1);
+
     }
 }
 .pointing__mugs {

@@ -67,10 +67,17 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.3s all ease;
-}
-.magazine__btn:hover{
-    border-color:rgba(29, 31, 46, 0.7) ;
-    background-color: transparent;
-    color: $text-clr;
+    transition: 0.3s all ease-in-out;
+    &:hover{
+        border-color:rgba(29, 31, 46, 0.7) ;
+        background-color: transparent;
+        color: $text-clr;
+    }
+    &:active{
+        opacity: 0.6;
+        background-color: $text-clr;
+        border: 1px solid $text-clr;
+        color: $white-clr;
+        cursor: grabbing;
+    }
 }
